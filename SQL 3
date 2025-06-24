@@ -1,0 +1,1 @@
+SELECT d.dept_name FROM departments d JOIN employees e ON d.dept_id=e.dept_id GROUP BY d.dept_id,d.dept_name HAVING MIN(e.salary) > 55000;
