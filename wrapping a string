@@ -1,0 +1,8 @@
+def wrap_text(text, width):
+    for index in range(0, len(text), width):
+        print(text[index:index + width])
+
+message = "ABCDEFGHIJKLIMNOQRSTUVWXYZ"
+line_width = 4
+
+wrap_text(message, line_width)
