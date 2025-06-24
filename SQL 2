@@ -1,0 +1,2 @@
+SELECT e1.emp_name,e1.salary,e1.dept_id FROM employees e1 JOIN(SELECT dept_id,MAX(salary)AS max_salary FROM employees
+WHERE hire_date > '2020-01-01' GROUP BY dept_id)e2 ON e1.dept_id=e2.dept_id AND e1.salary=e2.max_salary WHERE e1.hire_date>'2020-01-01';
