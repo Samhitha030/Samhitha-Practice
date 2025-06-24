@@ -1,0 +1,6 @@
+
+input_str = input("Enter a string: ")
+
+result = input_str[::2]
+
+print(result)
